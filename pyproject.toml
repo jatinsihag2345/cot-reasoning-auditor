@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cot-reasoning-auditor"
+version = "0.1.0"
+description = "Chain-of-Thought (CoT) reasoning trace audit toolkit for evaluating logical coherence and detecting reasoning fallacies."
+authors = [{ name = "Jatin Sihag", email = "jatinsihag234@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+cot-audit = "cot_auditor.cli:main"
