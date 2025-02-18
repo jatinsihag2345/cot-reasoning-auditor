@@ -1,0 +1,16 @@
+[
+  {
+    "trace_id": "trace_01_valid_math",
+    "model_name": "DeepSeek-R1",
+    "question": "What is 15% of 240?",
+    "ground_truth": "36",
+    "raw_trace": "To find 15% of 240, let us first compute 10% of 240.\n\n10% of 240 is 240 / 10 = 24.\n\nNow, 5% is half of 10%, so 24 / 2 = 12.\n\nAdding them together: 24 + 12 = 36.\n\nWait, let me double-check: 240 * 0.15 = 240 * (3/20) = 12 * 3 = 36. Both methods agree.\n\nTherefore, the final answer is 36."
+  },
+  {
+    "trace_id": "trace_02_circular_error",
+    "model_name": "Generic-Reasoning-LLM",
+    "question": "Find prime factors of 91.",
+    "ground_truth": "7, 13",
+    "raw_trace": "Let's check if 91 is divisible by 2. No, 91 is odd.\n\nLet's check if 91 is divisible by 3. Sum of digits is 10, so no.\n\nLet's check if 91 is divisible by 5. Last digit is 1, so no.\n\nLet's check if 91 is divisible by 3. Sum of digits is 10, so no.\n\nTherefore 91 is a prime number."
+  }
+]
