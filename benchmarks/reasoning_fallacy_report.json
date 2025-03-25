@@ -1,0 +1,34 @@
+{
+  "benchmark": "CoT-Reasoning-Auditor v1.0",
+  "evaluated_traces": 300,
+  "models": [
+    {
+      "model": "OpenAI o1 (Preview)",
+      "avg_backtrack_count": 3.8,
+      "circular_loop_rate": "2.4%",
+      "premise_hallucination_rate": "1.8%",
+      "mean_coherence_score": "0.94"
+    },
+    {
+      "model": "DeepSeek-R1",
+      "avg_backtrack_count": 4.5,
+      "circular_loop_rate": "3.1%",
+      "premise_hallucination_rate": "2.2%",
+      "mean_coherence_score": "0.92"
+    },
+    {
+      "model": "QwQ-32B-Preview",
+      "avg_backtrack_count": 5.2,
+      "circular_loop_rate": "7.8%",
+      "premise_hallucination_rate": "6.4%",
+      "mean_coherence_score": "0.83"
+    },
+    {
+      "model": "Claude 3.5 Sonnet (with CoT prompt)",
+      "avg_backtrack_count": 1.9,
+      "circular_loop_rate": "4.2%",
+      "premise_hallucination_rate": "3.5%",
+      "mean_coherence_score": "0.88"
+    }
+  ]
+}
